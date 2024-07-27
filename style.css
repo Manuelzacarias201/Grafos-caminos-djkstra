@@ -1,0 +1,109 @@
+/* General */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('./src/img/fondo.webp'); /* Ruta de la imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Añadido para mejorar el espaciado en pantallas pequeñas */
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 900px; /* Ampliado para un mejor diseño en pantallas grandes */
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9); /* Fondo blanco semi-transparente */
+    border-radius: 12px; /* Bordes redondeados más suaves */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+    box-sizing: border-box;
+}
+
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.header input {
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    flex: 1;
+}
+
+.header .imgsearch {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+/* Main Content */
+.main-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Mayor espacio entre secciones */
+    margin-bottom: 30px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espacio entre los elementos dentro del grupo */
+}
+
+.form-group input {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espacio entre botones */
+}
+
+.button-group button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.button-group button:hover {
+    background-color: #0056b3;
+}
+
+/* Result */
+.result {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+}

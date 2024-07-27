@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Ciudades</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <input type="text" placeholder="Distancia mínima" required id="minDistance">
+            <img src="./src/img/lupa.webp" class="imgsearch" alt="Buscar">
+        </header>
+
+        <main class="main-content">
+            <section class="form-section">
+                <div class="form-group">
+                    <input type="text" placeholder="Agregar ciudades origen" required id="city">
+                    <input type="text" placeholder="Agregar distancia" required id="addDistance">
+                    <button id="add-btn">Agregar</button>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" placeholder="Origen" required id="origen">
+                    <input type="text" placeholder="Distancia" required id="distance">
+                    <input type="text" placeholder="Agregar ciudades destino" required id="destino">
+                </div>
+
+                <div class="button-group">
+                    <button id="addEdge-btn">Agregar conexión</button>
+                    <button id="recorrido-btn">Recorrido por Profundidad</button>
+                    <button id="recorridoAnchura-btn">Recorrido por Anchura</button>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" placeholder="Origen" required id="origen-dij">
+                    <input type="text" placeholder="Destino" required id="destino-dij">
+                    <button id="distanceMin-btn">Distancia Mínima</button>
+                </div>
+            </section>
+        </main>
+        
+        <div id="imprimirAll" class="result"></div>
+    </div>
+
+    <script type="module" src="./src/controllers/script.mjs"></script>
+</body>
+</html>

@@ -1,4 +1,5 @@
-import LinkedList from "../models/LinKedlist.mjs"
+import LinkedList from "../models/LinkedList.mjs";
+
 
 const linkedList = new LinkedList()
 

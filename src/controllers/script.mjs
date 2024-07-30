@@ -14,14 +14,13 @@ let graph = new Graph();
 
 add.addEventListener("click", () =>{
     let city = document.getElementById("city").value;
-    let distancia = document.getElementById("addDistance").value;
 
     if(!city){
         Swal.fire("Por favor, completa todos los campos.");
         return;
     }
 
-    graph.addVertices(city, distancia); 
+    graph.addVertices(city); 
     Swal.fire("Registro exitoso");
 });
 
